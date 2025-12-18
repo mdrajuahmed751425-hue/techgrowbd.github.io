@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeBazaar</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>PrimeBazaar</h1>
+    <p>Best Deals in Town!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#category">Category</a>
+    <a href="#cart">Cart</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to PrimeBazaar</h2>
+    <p>Your one-stop shop for amazing products at great prices.</p>
+</div>
+
+<div class="container" id="category">
+    <h2>Our Products</h2>
+
+    <!-- Lungi -->
+    <div class="product">
+        <img src="https://via.placeholder.com/150?text=Lungi" alt="Lungi">
+        <div class="product-details">
+            <h3>Lungi</h3>
+            <p>Price: 700 BDT</p>
+            <button class="btn" onclick="addToCart('Lungi', 700)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Pant -->
+    <div class="product">
+        <img src="https://via.placeholder.com/150?text=Pant" alt="Pant">
+        <div class="product-details">
+            <h3>Pant</h3>
+            <p>Price: 1500 BDT</p>
+            <button class="btn" onclick="addToCart('Pant', 1500)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shirt -->
+    <div class="product">
+        <img src="https://via.placeholder.com/150?text=Shirt" alt="Shirt">
+        <div class="product-details">
+            <h3>Shirt</h3>
+            <p>Price: 1200 BDT</p>
+            <button class="btn" onclick="addToCart('Shirt', 1200)">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="container" id="cart">
+    <h2>Your Cart (<span id="cart-count">0</span> items)</h2>
+    <div id="cart-items"></div>
+    <button class="btn" onclick="checkout()">Checkout</button>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 01602603259</p>
+    <p>Email: mdrajuahmed751425@gmail.com</p>
+    <p>Address: Mirpur11 Road, 10 Block B</p>
+    <p>Payment Options: bKash, Nagad</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 PrimeBazaar. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
